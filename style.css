@@ -1,0 +1,52 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f0f2f5;
+}
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+.day {
+  padding: 10px;
+  min-height: 70px;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  position: relative;
+}
+.highlight {
+  background-color: #ffe08a;
+}
+.weekday {
+  font-weight: bold;
+  background: #dfe3e6;
+  text-align: center;
+}
+.task {
+  font-size: 12px;
+  color: #333;
+  margin-top: 5px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+  background: white;
+  padding: 20px;
+  border: 2px solid #888;
+  box-shadow: 0 0 10px gray;
+}
+.modal-content {
+  position: relative;
+}
+#closeModal {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}

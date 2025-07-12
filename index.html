@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar with Firebase Tasks</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Firebase SDK -->
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <h2>📅 Firebase Calendar with Tasks</h2>
+
+  <label>From: <input type="date" id="fromDate"></label>
+  <label>To: <input type="date" id="toDate"></label>
+  <button onclick="generateCalendar()">Show Calendar</button>
+
+  <div id="calendar"></div>
+
+  <!-- Modal for Task Entry -->
+  <div id="taskModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h3>Add Task for <span id="selectedDate"></span></h3>
+      <input type="text" id="taskInput" placeholder="Task description">
+      <button onclick="saveTask()">Save Task</button>
+    </div>
+  </div>
+</body>
+</html>
